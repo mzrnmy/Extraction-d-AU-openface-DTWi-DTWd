@@ -73,7 +73,6 @@ Format vidéo : adapter les extensions supportées dans extract_openface_feature
 # Licence
 
 Ce projet est distribué sous licence MIT. Voir le fichier LICENSE pour plus de détails.
-- Licence du projet : Ce projet est distribué sous licence MIT. 
 - Licence d'OpenFace :
     OpenFace est distribué sous Apache License, Version 2.0. Pour citer et respecter cette licence, ajoutez dans vos documents la mention suivante :
 
