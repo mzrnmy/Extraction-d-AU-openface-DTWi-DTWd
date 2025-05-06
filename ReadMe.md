@@ -8,7 +8,7 @@ Ce dépôt contient un pipeline complet pour extraire, traiter et analyser des d
 
 - Normalisation des tableaux NumPy (z-score).
 
--Analyse DTW causale pour mesurer l'imitation faciale entre un robot et plusieurs participants.
+- Analyse DTW causale pour mesurer l'imitation faciale entre un robot et plusieurs participants.
 
 - Visualisations : courbes temporelles, heatmaps DTWD/DTWI et alignements.
 
@@ -38,15 +38,15 @@ Instalation: https://github.com/TadasBaltrusaitis/OpenFace/wiki
 
 ## Configuration
 
-Avant de lancer les scripts, modifier les chemins dans data_preparation.py :
+Avant de lancer les scripts, modifier les chemins dans data_preparation.py 
 
-# Chemin vers le dossier OpenFace
-OPENFACE_DIR = Path("/chemin/vers/OpenFace")
-# Dossier contenant vos vidéos
-VIDEOS_DIR   = Path("/chemin/vers/videos")
-# Fichiers de sortie
-CSV_DIR      = VIDEOS_DIR / "openface_csv"
-NUMPY_DIR    = VIDEOS_DIR / "openface_numpy"
+- Chemin vers le dossier OpenFace
+    - OPENFACE_DIR = Path("/chemin/vers/OpenFace")
+- Dossier contenant vos vidéos
+    - VIDEOS_DIR   = Path("/chemin/vers/videos")
+- Fichiers de sortie
+   - CSV_DIR      = VIDEOS_DIR / "openface_csv"
+   - NUMPY_DIR    = VIDEOS_DIR / "openface_numpy"
 
 Dans dtw_analysis.py, adapter si nécessaire la fréquence d'images (fps) et le délai maximal (delay_sec).
 
@@ -58,13 +58,13 @@ results_df : DataFrame contenant pour chaque participant :
 
 DTWD_causal : distance DTW multidimensionnelle.
 
-DTWI_causal : distance DTW unidimensionnelle (moyenne).
+DTWI_causal : distance DTW unidimensionnelle (par AU de vecteurs).
 
 score_causal : ratio DTWD / (DTWI + ε).
 
-Graphiques sauvegardés ou affichés à l'écran.
+Graphiques affichés à l'écran.
 
-Personnalisation
+### Personnalisation
 
 Colonnes AU : modifier la liste AU_COLS pour ajouter/supprimer des Action Units.
 
